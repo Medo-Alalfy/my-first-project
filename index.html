@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>crud</h2>
+            <p>prodect mangement system</p>
+        </div>
+
+        <div class="inputs">
+
+            <input type="text" id="title" placeholder="title">
+            <div class="price">
+                <input type="number" id="price" placeholder="price" onkeyup="getTotal()">
+                <input type="number" id="taxes" placeholder="taxes" onkeyup="getTotal()">
+                <input type="number" id="ads" placeholder="ads" onkeyup="getTotal()">
+                <input type="number" id="discount" placeholder="discount" onkeyup="getTotal()">
+                <small id="total">TOTAL</small>
+            </div>
+
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="catogry" placeholder="catogry">
+            <button value="SUBMIT" id="submit">Create</button>
+        </div>
+
+        <div class="outputs">
+            <div class="searchBlok">
+                <input type="text" id="search" placeholder="Search">
+                <div class="btnSearch">
+                    <button id="searchTitle">serach By Title</button>
+                    <button id="catogry">serach By Catogry</button>
+                </div>
+
+            </div>
+
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>categry</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody>
+
+                </tbody id="tbody">
+
+            </table>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
